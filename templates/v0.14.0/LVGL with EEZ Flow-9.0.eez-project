@@ -91,7 +91,11 @@
         }
       ],
       "destinationFolder": "src\\ui",
-      "lvglInclude": "lvgl/lvgl.h"
+      "lvglInclude": "lvgl/lvgl.h",
+      "generateSourceCodeForEezFramework": true,
+      "compressFlowDefinition": false,
+      "executionQueueSize": 1000,
+      "expressionEvaluatorStackSize": 20
     }
   },
   "variables": {
@@ -152,8 +156,6 @@
               "flags": "PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLLABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN",
               "hiddenFlagType": "literal",
               "clickableFlagType": "literal",
-              "scrollbarMode": "auto",
-              "scrollDirection": "all",
               "checkedStateType": "literal",
               "disabledStateType": "literal",
               "states": "",
@@ -170,8 +172,6 @@
           "hiddenFlagType": "literal",
           "clickableFlag": true,
           "clickableFlagType": "literal",
-          "scrollbarMode": "auto",
-          "scrollDirection": "all",
           "checkedStateType": "literal",
           "disabledStateType": "literal",
           "states": "",
