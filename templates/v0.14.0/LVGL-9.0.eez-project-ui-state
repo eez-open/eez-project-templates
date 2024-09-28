@@ -5,7 +5,7 @@
   },
   "layoutModel": {
     "rootEditor": {
-      "version": 113,
+      "version": 115,
       "json": {
         "global": {
           "splitterSize": 4,
@@ -47,6 +47,14 @@
                 "component": "bitmaps",
                 "enableClose": false,
                 "icon": "material:image"
+              },
+              {
+                "type": "tab",
+                "id": "lvgl-groups",
+                "name": "Groups",
+                "component": "lvgl-groups",
+                "enableClose": false,
+                "icon": "material:view_compact"
               }
             ]
           },
@@ -93,16 +101,16 @@
         ],
         "layout": {
           "type": "row",
-          "id": "#b6737dd6-4586-437c-91a6-ceaaaf1f3556",
+          "id": "#d882eba7-99db-4635-940b-490f7fc45cdd",
           "children": [
             {
               "type": "row",
-              "id": "#51218195-fe40-47a7-bd36-b745a0739bd7",
+              "id": "#6a619896-72b7-436d-9106-97327705d93c",
               "weight": 20,
               "children": [
                 {
                   "type": "tabset",
-                  "id": "#d0d5b693-0791-4d0a-bce1-2f4b8bdb421f",
+                  "id": "#841b2fab-28ce-4d38-88a4-62b34649f293",
                   "weight": 1,
                   "enableClose": false,
                   "children": [
@@ -134,13 +142,13 @@
                 },
                 {
                   "type": "tabset",
-                  "id": "#3359bf17-b639-456e-826c-05e9081c801c",
+                  "id": "#f3b506bd-0b9c-4c6b-8782-445640836e60",
                   "weight": 1,
                   "enableClose": false,
                   "children": [
                     {
                       "type": "tab",
-                      "id": "#98886e69-233f-44af-a7b6-027ddc6da85f",
+                      "id": "#64d10ada-77a4-4402-a47b-7e003457b4a5",
                       "name": "Widgets Structure",
                       "component": "flow-structure",
                       "enableClose": false,
@@ -150,7 +158,7 @@
                 },
                 {
                   "type": "tabset",
-                  "id": "#de296ad1-dee0-413b-9d5e-64d7f0b07bf0",
+                  "id": "#df361685-84e7-48a5-b7ab-a33911845a3a",
                   "weight": 1,
                   "enableClose": false,
                   "children": [
@@ -170,31 +178,20 @@
               "type": "tabset",
               "id": "EDITORS",
               "weight": 60,
+              "selected": -1,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
-              "children": [
-                {
-                  "type": "tab",
-                  "id": "#bfb0d5e2-2a0e-4697-b11a-ed90020fbabe",
-                  "name": "Main",
-                  "component": "editor",
-                  "config": {
-                    "objectPath": "[LVGL-9.0.eez-project]:/userPages/0",
-                    "permanent": false
-                  },
-                  "icon": "svg:page"
-                }
-              ],
+              "children": [],
               "active": true
             },
             {
               "type": "row",
-              "id": "#d64a527c-00c6-4429-a66d-65aff63e93af",
+              "id": "#6e3f9b9a-2889-446c-9c20-9e37adc50c61",
               "weight": 25,
               "children": [
                 {
                   "type": "tabset",
-                  "id": "#4443fb61-9777-4dc3-8cf5-ff0d6617f304",
+                  "id": "#a841cf55-f8bb-4f5c-82d9-f3dda5446bf8",
                   "weight": 2,
                   "children": [
                     {
@@ -209,7 +206,7 @@
                 },
                 {
                   "type": "tabset",
-                  "id": "#8756167b-9454-4f97-ae98-049ef1e374f0",
+                  "id": "#6439cfea-a814-4d73-84d2-9a96f8f93f8e",
                   "weight": 1,
                   "children": [
                     {
@@ -874,6 +871,66 @@
                       "id": "TEXTS_STATISTICS",
                       "name": "Statistics",
                       "component": "statistics",
+                      "enableClose": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "lvglGroups": {
+      "version": 3,
+      "json": {
+        "global": {
+          "splitterSize": 4,
+          "splitterExtra": 4,
+          "tabEnableRename": false,
+          "borderEnableAutoHide": true
+        },
+        "borders": [],
+        "layout": {
+          "type": "row",
+          "id": "#a949608d-861a-4bb5-a5ff-35fd004d39b4",
+          "children": [
+            {
+              "type": "row",
+              "id": "#62229658-332b-4e20-9621-96133c4d251d",
+              "children": [
+                {
+                  "type": "tabset",
+                  "id": "#93f61d33-2515-4010-a645-fa97d6216501",
+                  "weight": 50,
+                  "enableDrop": false,
+                  "enableDrag": false,
+                  "enableClose": false,
+                  "enableTabStrip": true,
+                  "children": [
+                    {
+                      "type": "tab",
+                      "id": "#64ffe7b3-e309-4db7-a875-1ba1b1f49e7e",
+                      "name": "Groups",
+                      "component": "groups",
+                      "enableClose": false
+                    }
+                  ]
+                },
+                {
+                  "type": "tabset",
+                  "id": "#b89893dd-1428-4b9f-87c3-1f5e1bb72f89",
+                  "weight": 50,
+                  "enableDrop": false,
+                  "enableDrag": false,
+                  "enableClose": false,
+                  "enableTabStrip": true,
+                  "children": [
+                    {
+                      "type": "tab",
+                      "id": "#41faf517-6e9f-4144-971a-616ca758b0e3",
+                      "name": "Group Widgets",
+                      "component": "order",
                       "enableClose": false
                     }
                   ]
