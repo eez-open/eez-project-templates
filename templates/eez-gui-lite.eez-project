@@ -35,13 +35,13 @@
       "files": [
         {
           "objID": "aff564fb-7760-21b3-77eb-25a9ffc7ca8e",
-          "fileName": "led-portaray-gui.h",
+          "fileName": "ui.h",
           "template": "//${eez-studio EEZ_GUI_LITE_DECL}\n"
         },
         {
           "objID": "1cc9aae6-a588-d56b-2532-8bc0f671da17",
-          "fileName": "led-portaray-gui.c",
-          "template": "#include \"led-portaray-gui.h\"\n\n//${eez-studio EEZ_GUI_LITE_DEF}"
+          "fileName": "ui.c",
+          "template": "#include \"ui.h\"\n\n//${eez-studio EEZ_GUI_LITE_DEF}"
         }
       ],
       "destinationFolder": ".",
